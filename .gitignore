@@ -1,0 +1,8 @@
+build/
+build-debug
+cmake-build-debug/
+
+.env
+*.env
+*.env.*
+!.env.example

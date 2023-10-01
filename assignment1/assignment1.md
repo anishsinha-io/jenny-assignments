@@ -7,7 +7,9 @@ _*Estimated Time*_: 2 hours
 ### Part 1
 
 <----------
+
 _*Instructions*_: Create a new document in this directory called `assignment1-solutions.md` and bullet your solutions for the questions there. At the top of the document, please write your name and the date you started the assignment.
+
 <----------
 
 - What’s the difference between a null pointer and a void pointer. What happens when you dereference a null pointer? What happens if you dereference a void pointer? Explain what each error means.
@@ -22,6 +24,7 @@ _*Instructions*_: Create a new document in this directory called `assignment1-so
 ### Part 2
 
 <----------
+
 _*Instructions*_: Watch and follow along with the following three videos:
 
 - [Understanding and implementing a Linked List in C and Java](https://www.youtube.com/watch?v=VOpjAHCee7c)
