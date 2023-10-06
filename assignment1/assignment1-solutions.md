@@ -26,7 +26,7 @@ Dereferencing a void pointer in memory allocated by the malloc function will res
 
 - What happens if I add 1 to a void pointer? What happens if I add 1 to an int pointer? What happens if I add 1 to a double pointer? What is a generalized formula for this addition or subtraction process?
 
-When you add 1 to a void pointer, the address of the pointer incrememts by 1. If you add 1 to an int pointer, the address of the pointer increments by 4. If you add 1 to a double pointer, the address of the pointer incremements by 8. When you incrememnt a pointer, it moves forward by the amount of bytes of the underlying datatype. When you decrement a pointer, the value of the pointer's current address decreases by the amount of bytes of the underlying datatype. 
+When you add 1 to a void pointer, the address of the pointer increments by 1. If you add 1 to an int pointer, the address of the pointer increments by 4. If you add 1 to a double pointer, the address of the pointer increments by 8. When you increment a pointer, it moves forward by the amount of bytes of the underlying datatype. When you decrement a pointer, the value of the pointer's current address decreases by the amount of bytes of the underlying datatype. 
 
 - Assume a chunk of memory is allocated by the malloc function and a void pointer is returned which points to this memory. What if I want to interpret bits 7-10 as an integer? How could I do this?
 
@@ -35,4 +35,4 @@ Since malloc returns a void pointer, you would need to cast it to the appropriat
 
 - How can I resize a chunk of memory to be smaller or larger? (The answer is a standard library function). What is returned by the library function? Is the chunk of memory resized in place?
 
-You can resize a previouslly allocated block of memory using the reallic function. The chunk of memory can be resized in place (the memory block is adjusted without being moved to a different location in memory) if there is enough space in the current block to expand or shrink. Otherwise, it copies the data from the old block of memory to a new block with the adjusted size and frees the old block.
+You can resize a previously allocated block of memory using the realloc function. The chunk of memory can be resized in place (the memory block is adjusted without being moved to a different location in memory) if there is enough space in the current block to expand or shrink. Otherwise, it copies the data from the old block of memory to a new block with the adjusted size and frees the old block.
